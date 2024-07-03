@@ -1,7 +1,7 @@
 ARG ALPINE_TAG=latest
 FROM alpine:${ALPINE_TAG}
 
-LABEL maintainer="Jon LaBelle <https://jonlabelle.com>" \
+LABEL maintainer="Federico Nebiolo <iconeb@yahoo.it>" \
     description="A Docker image with various network tools pre-installed."
 
 RUN apk -U upgrade \
@@ -13,6 +13,7 @@ RUN apk -U upgrade \
         ca-certificates \
         coreutils \
         curl \
+        dpdk \
         drill \
         findutils \
         fping \
